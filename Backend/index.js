@@ -79,7 +79,6 @@
 //   console.log(`Server is running on port ${process.env.PORT || 5000}`);
 // });
 
-
 const dotenv = require("dotenv");
 dotenv.config();
 
@@ -102,7 +101,7 @@ const forgotClientRoutes = require("./routes/forgotClientRoutes"); // [forgot]
 // const googleClientRoutes = require("./routes/googleClientRoutes");
 
 const corsOptions = {
-  origin: ["http://localhost:5173"], // Allow your frontend origin
+  origin: ["http://localhost:5173", "https://skillroom.co.in"], // Allow your frontend origin
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true, // If you use cookies or auth tokens
@@ -142,7 +141,6 @@ app.use("/business", forgotClientRoutes); // [forgot]
 // app.use("/users", googleUserRoutes);
 // app.use("/business", googleClientRoutes);
 
-
 // Global error handler
 process.on("uncaughtException", (err) => {
   console.error("Uncaught Exception:", err.message, err.stack);
@@ -157,4 +155,4 @@ app.listen(process.env.PORT || 5000, () => {
 });
 // module.exports = app;
 
-
+// "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
