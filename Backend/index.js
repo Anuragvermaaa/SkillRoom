@@ -101,10 +101,14 @@ const forgotClientRoutes = require("./routes/forgotClientRoutes"); // [forgot]
 // const googleClientRoutes = require("./routes/googleClientRoutes");
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://www.skillroom.co.in"], // Allow your frontend origin
+  origin: [
+    "http://localhost:5173",
+    "https://www.skillroom.co.in",
+    "https://skillroom.co.in",
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true, // If you use cookies or auth tokens
+  credentials: true,
 };
 app.use(cors(corsOptions));
 app.use(cookieParser());
@@ -124,13 +128,13 @@ mongoose
 
 app.get("/favicon.ico", (req, res) => res.status(204).end()); // Ignore favicon
 
-app.get("/", (req, res) => {
-  res.send("hello world!");
-});
+// app.get("/", (req, res) => {
+//   res.send("hello world!");
+// });
 
-app.get("/health", (req, res) => {
-  res.status(200).json({ message: "Server is running" });
-});
+// app.get("/health", (req, res) => {
+//   res.status(200).json({ message: "Server is running" });
+// });
 
 app.use("/users", userRoutes);
 app.use("/business", clintRoutes);
