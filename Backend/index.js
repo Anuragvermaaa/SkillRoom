@@ -101,7 +101,7 @@ const forgotClientRoutes = require("./routes/forgotClientRoutes"); // [forgot]
 // const googleClientRoutes = require("./routes/googleClientRoutes");
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://skillroom.co.in"], // Allow your frontend origin
+  origin: ["http://localhost:5173", "https://www.skillroom.co.in"], // Allow your frontend origin
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true, // If you use cookies or auth tokens
@@ -121,6 +121,8 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 // connectToDb();
+
+app.get("/favicon.ico", (req, res) => res.status(204).end()); // Ignore favicon
 
 app.get("/", (req, res) => {
   res.send("hello world!");
