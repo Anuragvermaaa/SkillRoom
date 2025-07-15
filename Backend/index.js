@@ -110,6 +110,15 @@ const corsOptions = {
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
 };
+
+// ... existing code ...
+
+// Add this before app.use routes
+app.get("/health", (req, res) => {
+  res.status(200).send("OK");
+});
+
+// ... existing app.use routes ...
 app.use(cors(corsOptions));
 app.use(cookieParser());
 
