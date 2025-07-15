@@ -65,10 +65,10 @@ const ContactInfo = () => {
         <div>
           <p className="text-gray-400 font-semibold">Helpline</p>
           <a
-            href="tel:+919508362645"
+            href="tel:+919220578090"
             className="text-gray-200 hover:text-blue-400 transition-colors"
           >
-            +91-9508362645
+            +91-9220578090
           </a>
           <p className="text-sm text-gray-500 mt-1">
             Reach out to our dedicated helpline for urgent assistance or student
@@ -86,7 +86,7 @@ const ContactInfo = () => {
         <div>
           <p className="text-gray-400 font-semibold">Address</p>
           <p className="text-gray-200">
-            Plot No. 1, Sector 62, Noida, Uttar Pradesh, India
+            Plot No. 44, Sector 45, Noida, 201303, Uttar Pradesh, India
           </p>
           <p className="text-sm text-gray-500 mt-1">
             Located in the heart of NCR’s educational hub, our office is easily
