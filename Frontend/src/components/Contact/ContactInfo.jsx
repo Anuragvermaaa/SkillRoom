@@ -44,10 +44,10 @@ const ContactInfo = () => {
         <div>
           <p className="text-gray-400 font-semibold">Email</p>
           <a
-            href="mailto:contact.skillroom@gmail.com"
+            href="mailto:business@skillroom.co.in"
             className="text-gray-200 hover:text-blue-400 transition-colors"
           >
-            contact.skillroom@gmail.com
+            business@skillroom.co.in
           </a>
           <p className="text-sm text-gray-500 mt-1">
             For partnership inquiries, feedback, or support, drop us an email
@@ -86,7 +86,7 @@ const ContactInfo = () => {
         <div>
           <p className="text-gray-400 font-semibold">Address</p>
           <p className="text-gray-200">
-            Plot No. 44, Sector 45, Noida, 201303, Uttar Pradesh, India
+            Plot No.36, Sector 45, Noida, 201303, Uttar Pradesh, India
           </p>
           <p className="text-sm text-gray-500 mt-1">
             Located in the heart of NCR’s educational hub, our office is easily
